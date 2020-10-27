@@ -1,0 +1,21 @@
+﻿<Window x:Class="ActividadesUT2_5.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ActividadesUT2_5"
+        mc:Ignorable="d"
+        Title="Cambiar texto" Height="450" Width="800">
+    <Grid>
+        <TextBlock Text="Texto" FontSize="18" Margin="50,55,687,337"/>
+        <TextBox x:Name="Caja_TextBox" TextChanged="AnyadirTexto" Margin="50,87,585,263" TextWrapping="Wrap"/>
+        <CheckBox Content="Negrita" FontWeight="Bold" Margin="237,87,471,307" Click="Negrita_Checkbox" x:Name="Negrita"/>
+        <CheckBox Content="Cursiva" FontStyle="Italic" Margin="326,87,382,307" Click="Cursiva_Checkbox" x:Name="Cursiva"/>
+        <TextBlock Text="Color de la letra" Margin="441,87,256,311"/>
+        <RadioButton Content="Azul" Margin="551,62,191,337" Checked="Color_RadioButton" x:Name="Azul"/>
+        <RadioButton Content="Rojo" Margin="551,87,191,312" Checked="Color_RadioButton" x:Name="Rojo"/>
+        <RadioButton Content="Verde" Margin="551,112,191,287" Checked="Color_RadioButton" x:Name="Verde"/>
+        <TextBlock x:Name="Cajon_TextBlock" TextAlignment="Center" FontSize="28" FontStyle="Normal" FontWeight="Normal" TextTrimming="WordEllipsis"  Background="LightYellow" Margin="50,200,50,150"/>
+        
+    </Grid>
+</Window>
